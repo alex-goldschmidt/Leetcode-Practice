@@ -5,10 +5,10 @@
  2. let maj = prices[0]
  3. let max = 1
  4. for loop
- 5. increment count of current map element/convert count to int if null/unef
+ 5. increment count of current map element & convert count to int if null/undef
  6. if (map[num] > max)
-        increment count of current element in map/convert it to int if null/undef
-        set max = current element 
+        set max = current element in map
+        Set maj = current element
  7. return maj        
  */
 var majorityElement = function(nums) {
