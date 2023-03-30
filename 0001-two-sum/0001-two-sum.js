@@ -2,11 +2,10 @@
  * @param {number[]} nums
  * @param {number} target
  * @return {number[]}
- 1. create hash map 
- 2. for loop
- 3. set diff variable equal to target - current element
- 4. if diff in map, return current indice and index of diff value in the map
- 5. else, add the current element to the map
+  1. create hashmap
+  2. for loop
+  3. if diff in map, return its indice and the diff variable in the map
+  4. else, add current element to the map
  */
 var twoSum = function(nums, target) {
     let map = {}
