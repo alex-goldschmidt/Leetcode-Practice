@@ -9,6 +9,13 @@
  * @param {ListNode} list1
  * @param {ListNode} list2
  * @return {ListNode}
+ 1. write edge cases of if a list is empty or both lists are empty
+ 2. if a list's val < other list's val
+            list.next = mergeTwoLists(list.next, other list)
+            return list
+ 3. else, a list's val < other list's val
+            list.next = mergeTwoLists(list.next, other list)
+            return list          
  */
 var mergeTwoLists = function(list1, list2) {
     if (!list1) return list2
