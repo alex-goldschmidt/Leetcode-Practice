@@ -5,6 +5,10 @@
  *     this.left = (left===undefined ? null : left)
  *     this.right = (right===undefined ? null : right)
  * }
+ 1. base case for if no root, return null
+ 2. recursively define left and right roots of tree
+ 3. switch pointers
+ 4. return root
  */
 /**
  * @param {TreeNode} root
@@ -17,4 +21,4 @@ var invertTree = function(root) {
     root.left = right
     root.right = left
     return root
-};
+}
