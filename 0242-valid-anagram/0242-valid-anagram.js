@@ -2,13 +2,9 @@
  * @param {string} s
  * @param {string} t
  * @return {boolean}
- - if s length != t length, return false; no way to have a anagram.
- - split each string into individual characters
- - sort each string
- - join each string back together
- - check if the two input strings have the same characters in the same order;
-   this is necessary for a anagram to exist
- 
+ 1. if s & t are different lengths return false
+ 2. split.sort.join both strings
+ 3. return s === t
  */
 var isAnagram = function(s, t) {
     if (s.length !== t.length) return false
